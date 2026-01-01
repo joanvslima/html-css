@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    font-family: "tahoma", sans-serif;
+/*  Medidas absolutas: px, pt, cm, mm, in, pc
+    Medidas relativas: em, ex, rem, %, vw, vh  
+    16px = 1em */
+    font-size: 1em;
+
+}
+h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+h2{
+    font: italic 600 1.5em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*  shorthand font:
+    font: font-style font-weight font-size font-family */
+}
