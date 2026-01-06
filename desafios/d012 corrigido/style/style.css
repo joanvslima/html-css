@@ -14,9 +14,11 @@
 * {    
     padding: 0px;
     margin: 0px;
-    font-family: var(--font0);
 }
-
+html, body {    
+    min-height: 100vh;
+    background-color: gray;
+}
 br {
     padding: 5px;
 }
@@ -25,62 +27,43 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 50px;
     font-size: 1.05em;
 }
 header h1 {
+    padding-top: 50px;
     font-family: var(--font1);
     font-size: 10vw;
     font-variant: small-caps;
 }
 
 a {
-    text-decoration: none;
     color: white;
-    font-weight: 600;
+    text-decoration: none;
+    font-weight: bolder;
 }
 a:hover {
     text-decoration: underline;
 }
 
-main p {
-    font-family: var(--font2);
-    font-size: 3.5vw;
+section {
+    padding: 10vh 30px;
+    line-height: 2em;
 
 }
 
-article {
-    padding: 95px 30px;
-    line-height: 7vw;
+section.normal {
     background-color: white;
 }
-#t1 {
-    padding-bottom: 155px;
-    box-shadow: 30px 30px 30px black;
-}
-#t2 {
-    background: url(../imagens/background001.jpg) right center no-repeat fixed;
-    background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-}
 
-#t2 p, #t4 p {
-    background-color: rgba(0, 0, 0, 0.5);
+section.imagem {
+    background-color: gray;
     color: white;
-    width: fit-content;
-    padding: 5px;
 }
 
-#t3 p, #t5 p {
-    padding-bottom: 65px;
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5)
 }
-
-#t4 {
-    background: url(../imagens/background002.jpg) top left no-repeat fixed;
-    background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-}
-
 footer {
     background-color: black;
     color: white;
