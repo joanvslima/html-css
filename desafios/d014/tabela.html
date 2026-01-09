@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+        table {
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 1.2em;
+            background-color: #efefef;
+            text-align: center;
+            border-collapse: collapse;
+            width: 600px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Nota 1</th>
+                <th rowspan="2">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>8.0</td>
+                <td>8.6</td>
+                <td>8.3</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>7.0</td>
+                <td>6.8</td>
+                <td>6.9</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>7.2</td>
+                <td>6.8</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>7.7</td>
+                <td>8.3</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
