@@ -10,7 +10,21 @@
         }
         table {
             border-collapse: collapse;
-            min-width: 20em;
+            width: 400px;
+        }
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         th, td {
             padding: 10px;
@@ -19,19 +33,19 @@
         td:nth-child(2) {
             text-align: right;
         }
-
-        thead, tfoot{
-            background-color: gray;
-            color: white;
+        tr:nth-child(2n) {
+            background-color: lightgray;
         }
+
+
     </style>
 </head>
 <body>
-    <h1>Uso de tableas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th class="pop">População</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -144,9 +158,10 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>População total</th>
+            <th scope="row">População total</th>
             <td><strong>203 080 756</strong></td>
         </tfoot>
     </table>
+
 </body>
 </html>
