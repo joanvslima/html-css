@@ -8,11 +8,18 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
         table {
             font-family: 'Comfortaa', sans-serif;
-            font-size: 1.2em;
-            background-color: #efefef;
+            font-size: 1.1em;
+            background-color: #f6f6f6;
             text-align: center;
             border-collapse: collapse;
             width: 600px;
+        }
+        caption {
+            font-size: 1.4em;
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
         }
         th, td {
             border: 1px solid black;
@@ -21,16 +28,25 @@
         th {
             background-color: #ccc;
         }
+        .materia {
+            background-color: #f6f6f6;
+
+        }
+        .media {
+            text-align: right;
+            padding-right: 20px;
+        }
     </style>
 </head>
 <body>
     <table>
+        <caption>Notas Escolares</caption>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
                 <th rowspan="2">Nota 1</th>
@@ -39,23 +55,23 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" class="materia" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
-                <td>8.0</td>
+                <td>8.2</td>
                 <td>8.6</td>
-                <td>8.3</td>
+                <td>8.4</td>
             </tr>
             <tr>
                 <td>Física</td>
-                <td>7.0</td>
-                <td>6.8</td>
-                <td>6.9</td>
+                <td>7.2</td>
+                <td>7.6</td>
+                <td>7.4</td>
             </tr>
             <tr>
                 <td>Química</td>
                 <td>7.2</td>
-                <td>6.8</td>
-                <td>7.0</td>
+                <td>7.2</td>
+                <td>7.2</td>
             </tr>
             <tr>
                 <td>Biologia</td>
@@ -64,7 +80,25 @@
                 <td>8.0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
+                <th colspan="4" class="media" scope="row">Média de Exatas</th>
+                <th>7.8</th>
+            </tr>
+            <tr>
+                <th rowspan="2" class="materia" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>7.6</td>
+                <td>8.0</td>
+                <td>7.8</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>8.0</td>
+                <td>7.8</td>
+                <td>7.9</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media" scope="row">Média de Humanas</th>
+                <th>7.9</th>
             </tr>
         </tbody>
     </table>
