@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <fieldset id="fcor">
+            <legend>Color</legend>
+            <p>
+                <label for="icor">Selecione uma cor: </label>
+                <input type="color" name="cor" id="icor">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Range</legend>
+            <label for="inivel">Nível de satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" value="0">
+        </fieldset>
+        <fieldset>
+            <legend>File</legend>
+            <p>
+            <!-- Para este tipo de input (que enviam arquivos) é obrigatório que o method seja "POST", pois o método GET tem limite de 3.000 bytes de dados -->
+                <label for="iimg">Selecione um arquivo:</label>
+                <input type="file" name="arquivo" id="iarquivo">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

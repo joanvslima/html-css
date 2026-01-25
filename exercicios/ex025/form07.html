@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Select</legend>
+            <p>
+                <label for="iestado">Selecione seu estado: </label>
+                <select name="estado" id="iestado">
+                    <option value="" selected hidden disabled>Selecione</option>
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datalist</legend>
+            <p>
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="listaprof">
+                <datalist id="listaprof">
+                    <option>Desenvolvedor</option>
+                    <option>Designer</option>
+                    <option>Engenheiro</option>
+                    <option>Advogado</option>
+                    <option>Professor</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <p>
+                <label for="imsg">Mensagem: </label> <br>
+                <textarea name="msg" id="imsg" placeholder="Digite sua mensagem aqui"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            text-align: justify;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(0, 173, 0);
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px;
+        }
+        p {
+            text-indent: 25px;
+        }
+        a:hover {
+            font-weight: bold;
+            background-color: green;
+        }
+        #tela {
+            display: block;
+            width: 800px;
+            height: 300px;
+            margin: auto;
+        }
+        nav {
+            background-color: lightgreen;
+            text-align: center;
+            margin: 30px auto;
+            width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perferendis reprehenderit. Eligendi voluptate laborum laudantium quidem aliquam quas amet consequuntur excepturi voluptates? Dolores et alias aliquam. Quo cupiditate temporibus sunt!</p>
+    <nav>
+        <a href="pages/pg01.html" target="frame">Primeira Página</a>
+        <a href="pages/pg02.html" target="frame">Segunda Página</a>
+        <a href="pages/pg03.html" target="frame">Terceira Página</a>
+    </nav>
+    
+    <iframe id="tela" name="frame" srcdoc="<style>body, h1, img {padding: 0px; auto; text-align: center} </style><h1>Escolha uma das opções acima</h1> <img src='img/udyr.png' width='155px' height='200px'></img> " frameborder="1">
+        <p>Infelizmente seu navegador não é compatível.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia enim ab, laboriosam fugit voluptates vel nostrum, quia odio ducimus blanditiis. Nemo laboriosam rem nulla porro ab esse debitis impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. In error, explicabo eaque deleniti eum aspernatur doloremque aut inventore nihil quae odio velit laboriosam, aperiam maiores aliquam tenetur eius accusantium corrupti?</p>
+</body>
+</html>

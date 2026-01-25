@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            font-size: 0.9em;
+            padding: 5px;
+            text-indent: 5px;
+        }
+        #ddd {
+            text-align: center;
+            width: 20px;
+            text-indent: 0px;
+        }
+        fieldset {
+            width: 250px;
+        }
+        fieldset legend, #buttons {
+            text-align: center;
+        }
+        #buttons input {
+            width: 100px;
+            margin: 0px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" autocomplete="email" required placeholder="exemplo@exemplo.com">
+            </p>
+            <p>
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="ddd" id="ddd" maxlength="2" placeholder="xx" >
+                <input type="tel" name="tel" id="tel" size="13px" maxlength="9" autocomplete="tel" pattern="^\d{4,5}-\d{4}$" required placeholder="xxxxx-xxxx">
+            </p>
+            <p id="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

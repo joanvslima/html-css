@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Outras versões */
+
+@media print {
+  body {
+    background-image: url('../../img/back-print.jpg') center center no-repeat; /* Desnecessário, pois impressoras não imprimem background */
+    background-size: cover;
+  }
+  * {
+    font-family: Times New Roman, serif;
+  }
+
+  main {
+    border: 2px solid black;
+  }
+  main::after {
+    content: 'Documento para impressão';
+    font-size: 0.5em;
+    display: block;
+    text-align: center;
+  }
+  main h1{
+    text-shadow: none;
+    color: black;
+  }
+
+  #phone {display: none;}
+  #tablet {display: none;}
+  #print {display: block;}
+  #pc {display: none;}
+  #tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
+  body {
+    background: url('../../img/back-tablet.jpg') center center no-repeat;
+    background-size: cover;
+  }
+
+  #phone {display: none;}
+  #tablet {display: block;}
+  #print {display: none;}
+  #pc {display: none;}
+  #tv {display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Laptops/Desktops */
+  body {
+    background: url(../../img/back-pc.jpg) top center no-repeat;
+    background-size: cover;
+  }
+
+  #phone {display: none;}
+  #tablet {display: none;}
+  #print {display: none;}
+  #pc {display: block;}
+  #tv {display: none;}
+
+}
+
+@media screen and (min-width: 1200px) { /* Large Desktops / TVS */
+  body {
+    background: url(../../img/back-tv.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  #phone {display: none;}
+  #tablet {display: none;}
+  #print {display: none;}
+  #pc {display: none;}
+  #tv {display: block;}
+
+}
