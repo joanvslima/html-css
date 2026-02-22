@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-query.css">  
   <title>Document</title>
 </head>
-<body>
+<body onresize="changeSize()">
   <header>
     <h1>Website</h1>
-    <span id="menu" class="material-symbols-outlined"> menu </span>
-    <menu>
+    <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+    <menu id="menu">
       <ul>
         <li><a href="#">Opção 1</a></li>
         <li><a href="#">Opção 2</a></li>
@@ -30,5 +30,16 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis sunt totam provident vero cumque, eaque ab! Eum iure fuga vitae, doloremque provident qui, soluta illo dolorum, eaque tenetur itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam, suscipit ad amet officia vitae commodi, modi libero dolores voluptate, ullam reiciendis quod dolorum nisi expedita! Corporis nemo modi quod!</p>
     </article>
   </main>
+
+  <script>
+    function clickMenu() {
+      if (menu.style.display == 'block') {
+        menu.style.display = 'none'
+      } else {
+        menu.style.display = 'block'
+      }
+    }
+
+  </script>
 </body>
 </html>

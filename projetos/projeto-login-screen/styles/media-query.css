@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) /* and (max-width: 912px) */{
+
+  :root {
+    --green1: #91d1cf;
+    --green2: #4ea09d;
+    --green3: #2c5f5d;
+    --purple: #5f2c82;
+  }
+
+  body {
+    background: linear-gradient(var(--purple), var(--green2))
+  }
+
+  #login {
+    width: 80vw;
+    height: 280px;
+  }
+
+  #login p {
+    padding-bottom: 5px;
+  }
+
+  #login > #img {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #login > #form {
+    float: right;
+    width: 70%;
+    padding: 10px;
+  }
+
+  #submit, .forgot {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  body {
+    background: linear-gradient(var(--purple), var(--green2))
+  }
+  #login {
+    width: 950px;
+    height: 300px;
+  }
+
+  #login > #img {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+
+  #login > #form {
+    float: left;
+    width: 50%;
+  }
+  .email-password input {
+    width: 407px;
+  }
+}

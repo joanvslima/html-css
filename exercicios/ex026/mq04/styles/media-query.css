@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------
+Small screen: up to 600px
+Smartphone: 600px to 768px
+Tablet: 768px to 992px
+Desktop: 992px to 1200px
+Big screen: above 1200px
+*/
+
+@media screen and (min-width: 768px) {
+  #menu-icon {
+    display: none;
+  }
+  #menu {
+    display: block !important;
+  }
+
+  menu ul {
+    background: #2A8C82;
+    text-align: center;
+  }
+  menu li, a {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0px 10px;
+    width: 100px;
+  }
+  menu a:hover{
+    background: #195751;
+    font-weight: bold;
+  }
+
+  main {
+    max-width: 800px;
+  }
+}
